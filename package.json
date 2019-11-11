@@ -1,32 +1,4 @@
 {
-  "_args": [
-    [
-      "uniforms-material@2.6.0",
-      "/Users/quentinherzig/Documents/dev/epotek/microservices/admin"
-    ]
-  ],
-  "_from": "uniforms-material@2.6.0",
-  "_id": "uniforms-material@2.6.0",
-  "_inBundle": false,
-  "_integrity": "sha512-Lfmtem3YmdjnowY47+NE98TfkQEPRQ3S1AG5+samLDlO2sEYdh9/9sXBnxH7OumiKGCA/BwfgzjtJjj6kO1GHg==",
-  "_location": "/uniforms-material",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "uniforms-material@2.6.0",
-    "name": "uniforms-material",
-    "escapedName": "uniforms-material",
-    "rawSpec": "2.6.0",
-    "saveSpec": null,
-    "fetchSpec": "2.6.0"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/uniforms-material/-/uniforms-material-2.6.0.tgz",
-  "_spec": "2.6.0",
-  "_where": "/Users/quentinherzig/Documents/dev/epotek/microservices/admin",
   "bugs": {
     "url": "https://github.com/vazco/uniforms/issues"
   },
@@ -49,7 +21,6 @@
     "src/*.ts",
     "src/*.tsx"
   ],
-  "gitHead": "be9e6a07d7c1093f13155eba3963ad6facbcd05c",
   "keywords": [
     "form",
     "forms",
@@ -70,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vazco/uniforms/tree/master/packages/uniforms-material"
+    "url": "https://github.com/MisterQH/uniforms-material"
   },
   "version": "2.6.0"
 }
