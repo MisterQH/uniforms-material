@@ -1,16 +1,16 @@
-import Checkbox from '@material-ui/core/Checkbox';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormLabel from '@material-ui/core/FormLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Radio from '@material-ui/core/Radio';
-import RadioGroup from '@material-ui/core/RadioGroup';
-import React from 'react';
-import Switch from '@material-ui/core/Switch';
-import TextField from '@material-ui/core/TextField';
-import { connectField, filterDOMProps } from 'uniforms';
+import Checkbox from "@material-ui/core/Checkbox";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormGroup from "@material-ui/core/FormGroup";
+import FormLabel from "@material-ui/core/FormLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import React from "react";
+import Switch from "@material-ui/core/Switch";
+import TextField from "@material-ui/core/TextField";
+import { connectField, filterDOMProps } from "uniforms";
 
-import wrapField from './wrapField';
+import wrapField from "./wrapField";
 
 const xor = (item, array) => {
   const index = array.indexOf(item);
@@ -46,9 +46,9 @@ const renderSelect = ({
   variant,
   ...props
 }) => {
-  const Item = native ? 'option' : MenuItem;
+  const Item = native ? "option" : MenuItem;
   const hasPlaceholder = !!placeholder;
-  const hasValue = value !== '' && value !== undefined;
+  const hasValue = value !== "" && value !== undefined;
 
   return (
     <TextField
@@ -65,7 +65,7 @@ const renderSelect = ({
       margin={margin}
       onChange={event =>
         disabled ||
-        onChange(event.target.value !== '' ? event.target.value : undefined)
+        onChange(event.target.value !== "" ? event.target.value : undefined)
       }
       required={required}
       select
@@ -76,10 +76,10 @@ const renderSelect = ({
         native,
         ...filterDOMProps(props)
       }}
-      value={native && !value ? '' : value}
+      value={native && !value ? "" : value}
       variant={variant}
     >
-      {(hasPlaceholder || !required || !hasValue) && (
+      {hasPlaceholder && (
         <Item value="" disabled={!!required}>
           {placeholder || label}
         </Item>
@@ -135,7 +135,7 @@ const renderCheckboxes = ({
       </RadioGroup>
     );
   } else {
-    const SelectionControl = appearance === 'checkbox' ? Checkbox : Switch;
+    const SelectionControl = appearance === "checkbox" ? Checkbox : Switch;
 
     children = (
       <FormGroup id={id}>
@@ -163,7 +163,7 @@ const renderCheckboxes = ({
   return wrapField(
     {
       ...props,
-      component: 'fieldset',
+      component: "fieldset",
       disabled,
       error,
       errorMessage,
@@ -180,9 +180,9 @@ const Select = ({ checkboxes, ...props }: any) =>
   checkboxes ? renderCheckboxes(props) : renderSelect(props);
 
 Select.defaultProps = {
-  appearance: 'checkbox',
+  appearance: "checkbox",
   fullWidth: true,
-  margin: 'dense'
+  margin: "dense"
 };
 
 export default connectField(Select);
