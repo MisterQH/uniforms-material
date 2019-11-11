@@ -1,0 +1,76 @@
+{
+  "_args": [
+    [
+      "uniforms-material@2.6.0",
+      "/Users/quentinherzig/Documents/dev/epotek/microservices/admin"
+    ]
+  ],
+  "_from": "uniforms-material@2.6.0",
+  "_id": "uniforms-material@2.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-Lfmtem3YmdjnowY47+NE98TfkQEPRQ3S1AG5+samLDlO2sEYdh9/9sXBnxH7OumiKGCA/BwfgzjtJjj6kO1GHg==",
+  "_location": "/uniforms-material",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "uniforms-material@2.6.0",
+    "name": "uniforms-material",
+    "escapedName": "uniforms-material",
+    "rawSpec": "2.6.0",
+    "saveSpec": null,
+    "fetchSpec": "2.6.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/uniforms-material/-/uniforms-material-2.6.0.tgz",
+  "_spec": "2.6.0",
+  "_where": "/Users/quentinherzig/Documents/dev/epotek/microservices/admin",
+  "bugs": {
+    "url": "https://github.com/vazco/uniforms/issues"
+  },
+  "dependencies": {
+    "invariant": "^2.0.0",
+    "lodash": "^4.0.0",
+    "prop-types": "^15.5.7",
+    "tslib": "^1.0.0",
+    "uniforms": "^2.6.0"
+  },
+  "description": "Material UI components for uniforms.",
+  "devDependencies": {
+    "@material-ui/icons": "4.2.0"
+  },
+  "files": [
+    "*.d.ts",
+    "*.js",
+    "es6/*.d.ts",
+    "es6/*.js",
+    "src/*.ts",
+    "src/*.tsx"
+  ],
+  "gitHead": "be9e6a07d7c1093f13155eba3963ad6facbcd05c",
+  "keywords": [
+    "form",
+    "forms",
+    "material-ui",
+    "meteor",
+    "react",
+    "react-component",
+    "schema",
+    "validation"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "es6/index.js",
+  "name": "uniforms-material",
+  "peerDependencies": {
+    "@material-ui/core": "^4.0.0 || ^3.0.0 || ^1.2.0",
+    "react": "^16.0.0 || ^15.0.0 || ^0.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vazco/uniforms/tree/master/packages/uniforms-material"
+  },
+  "version": "2.6.0"
+}
